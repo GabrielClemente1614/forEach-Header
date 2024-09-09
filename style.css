@@ -56,13 +56,16 @@ header {
 
 header.sticky {
     background: rgba(32, 126, 189, 0.678);
-    backdrop-filter: blur(3.2px);
+ 
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.705);
   
    
 }
 
-
+.logo-img img {
+    width: 50px;
+    height: 40px;
+}
 .logo h1 {
    font-weight: 200;
    color: white;
@@ -200,6 +203,10 @@ header.sticky {
 
     .menu {
         display: block;
+        justify-content: end;
+        
+        display: flex;
+        
         
     }
 
@@ -209,7 +216,10 @@ header.sticky {
     }
 
     /* CSS */
+/* CSS ajustado */
+/* CSS ajustado */
 
+/* Contêiner do menu mobile */
 .cont-mobile {
     position: fixed;
     top: 0;
@@ -221,37 +231,60 @@ header.sticky {
     transform: translateX(-100%);
     transition: transform 0.4s ease;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     overflow: auto;
-   
 }
 
+/* Estado ativo do menu mobile */
 .cont-mobile.active {
-    transform: translateX(0); /* Muda o transform para mostrar o menu */
+    transform: translateX(0);
 }
 
+/* Estilo da lista no menu mobile */
 .cont-mobile ul {
-    display: flex;
-    flex-direction: column;
     list-style-type: none;
-  
+    padding: 0;
+    margin: 0;
 }
 
+/* Estilo dos itens da lista no menu mobile */
 .cont-mobile ul li {
     margin-top: 30px;
 }
 
+/* Estilo dos links no menu mobile */
 .cont-mobile a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    text-decoration: 2px 2px 7px rgba(0, 0, 0, 0.562);
     text-align: center;
     font-size: 1.7em;
     padding: 15px;
 }
+
+/* Botão do menu mobile */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Alterar imagem do botão do menu quando ativo */
+.btn-botao.img {
+    background-image: url(close_17dp_5F6368_FILL0_wght400_GRAD0_opsz20.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Adicionar uma margem para o botão de menu em dispositivos menores */
+@media screen and (max-width:375px) {
+    .menu {
+        margin-left: 30%;
+    }
+}
+
 
 
 
