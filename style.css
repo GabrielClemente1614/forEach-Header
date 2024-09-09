@@ -15,7 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Titillium Web", system-ui;
-    
+  
 }
 
 .header {
@@ -33,6 +33,12 @@
     --cor-botoes:#2ECC71;
 }
 
+/* CSS */
+body.no-scroll {
+    overflow: hidden;
+}
+
+
 header {
     width: 100%;
     height: 100px;
@@ -42,23 +48,23 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1;
     position: sticky;
     transition: 0.6s;
    
 }
 
 header.sticky {
-    background: rgba(32, 32, 189, 0.678);
+    background: rgba(32, 126, 189, 0.678);
     backdrop-filter: blur(3.2px);
     
    
 }
 
 
-.logo img {
-    height: 70px;
-    border-radius: 50%;
+.logo h1 {
+   font-weight: 200;
+   color: white;
     
 }
 
@@ -74,10 +80,11 @@ header.sticky {
 
 .cont ul a {
     text-decoration: none;
-    color:var(--cor-textPri) ;
+    color:rgb(228, 228, 228);
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.4em;
     transition: 0.1s;
+    text-decoration: 2px 2px 5px rgba(255, 255, 255, 0.842);
 }
 
 .menu button {
@@ -136,7 +143,7 @@ header.sticky {
 }
 
 .cont3 {
-    height: 900px;
+    height: 1900px;
 }
 
 .a.txtAni{
@@ -148,3 +155,170 @@ header.sticky {
     color: white;
     transition: 0.3s;
 }
+
+.cont-mobile {
+    display: none;
+
+}
+
+.menu {
+    display: none;
+}
+
+.btn-botao.img {
+   background-image: url(close_17dp_5F6368_FILL0_wght400_GRAD0_opsz20.png) ;
+   transform: translate(-10%);
+   transition: 0.2s;
+}
+
+
+
+
+
+
+@media  screen and (max-width:900px) {
+    .cont2 p {
+        max-width: 400px;
+        text-align: justify;
+        font-size: 0.9em;
+        color: black;
+    
+    
+    }
+
+    .cont2 {
+        background-color: var(--cor-segundaria);
+        backdrop-filter: blur(3.1px);
+        height: 20%;
+        width: 70%;
+        align-items: center;
+        padding: 20px;
+        border-radius: 3px;
+        margin: auto;
+    }
+
+    .menu {
+        display: block;
+        
+    }
+
+    .cont {
+        display: none;
+        
+    }
+
+    /* CSS */
+
+.cont-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto;
+   
+}
+
+.cont-mobile.active {
+    transform: translateX(0); /* Muda o transform para mostrar o menu */
+}
+
+.cont-mobile ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  
+}
+
+.cont-mobile ul li {
+    margin-top: 30px;
+}
+
+.cont-mobile a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: 2px 2px 7px rgba(0, 0, 0, 0.562);
+    text-align: center;
+    font-size: 1.7em;
+    padding: 15px;
+}
+
+
+
+
+
+    
+}
+
+
+@media  screen and (max-width:593px)  {
+    .cont-mobile a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-decoration: 2px 2px 7px rgba(0, 0, 0, 0.562);
+        text-align: center;
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
+
+@media  screen and (max-width:442px)  {
+    .cont-mobile a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-decoration: 2px 2px 7px rgba(0, 0, 0, 0.562);
+        text-align: center;
+        font-size: 1em;
+        padding: 15px;
+    }
+}
+
+@media  screen and (max-width:375px)  {
+    .cont-mobile a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-decoration: 2px 2px 7px rgba(0, 0, 0, 0.562);
+        text-align: center;
+        font-size: 4vw;
+        padding: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .cont-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        overflow: auto;
+       
+    }
+
+    .menu {
+        margin-left: 30%;
+    }
+    
+}
+
+
