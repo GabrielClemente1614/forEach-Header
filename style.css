@@ -15,9 +15,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Titillium Web", system-ui;
-  
+    
 }
 
+body {
+    background-color: #e2e2e2;
+    
+}
 .header {
     background-image: url(wallpaper-4k-paisagem-7908.jpg);
     background-repeat: no-repeat;
@@ -131,6 +135,28 @@ header.sticky {
 }
 
 
+
+.img-site ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.img-site ul li img {
+    height: 170px;
+    width: 130px;
+    margin: auto;
+}
+
+.img-site p {
+    padding: 20px;
+    color: black;
+    text-align: justify;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.507);
+    
+}
+
 .cont2 {
     background-color: var(--cor-segundaria);
     backdrop-filter: blur(3.1px);
@@ -147,7 +173,22 @@ header.sticky {
 }
 
 .cont3 {
-    height: 1900px;
+    margin-top: 150px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.541);
+}
+
+.cont3 img {
+    height: 700px;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    z-index: -1;
+    position: relative;
+    
+}
+
+.cont4 {
+    height:200px;
 }
 
 .a.txtAni{
@@ -174,6 +215,121 @@ header.sticky {
    transform: translate(-10%);
    transition: 0.2s;
 }
+
+.contOri {
+    margin-bottom: 50px;
+}
+
+.txt-si {
+    padding: 25px;
+   
+    color: rgba(0, 0, 0, 0.699);
+    font-size: 1.9em;
+}
+
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #333;
+    margin-top: 200px;
+    box-shadow: 3px 3px 1px rgb(0, 0, 0);
+    display: flex;
+    
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    max-width: 400px;
+   margin: auto;
+ 
+}
+
+.res {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.duv{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 30px;
+    color: white;
+    font-size: 1.5em;
+    border-radius:10px 20px;
+    width: 70%;
+   
+    
+}
+
+.duv button {
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    background-color: #ffffffc5;
+}
+
+.duv img {
+    height: 30px;
+    width: 30px;
+    z-index: 1111;
+   
+}
+
+.res1 {
+    font-size: 1.6em;
+     background: linear-gradient(to right , #333, #666666);
+    padding: 5px 30px;
+    border-radius: 3px;
+    color: white;
+    margin-top:30px ;
+}
+
+.res2 {
+    font-size: 1.6em;
+     background: linear-gradient(to right , #333, #666666);
+    padding: 5px 30px;
+    border-radius: 3px;
+    color: white;
+    margin-top:30px ;
+    transform: translate(-10%);
+}
+
+.res3 {
+    font-size: 1.6em;
+     background: linear-gradient(to right , #333, #666666);
+    padding: 5px 30px;
+    border-radius: 3px;
+    color: white;
+    margin-top:30px ;
+   
+}
+
+
+
+
+
+.res1 {
+    display: none;
+}
+
+.res2 {
+    display: none;
+}
+
+.res3 {
+    display: none;
+}
+
 
 
 
@@ -213,6 +369,22 @@ header.sticky {
     .cont {
         display: none;
         
+    }
+
+    .img-site ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        list-style-type: none;
+    }
+
+    .img-site p {
+        padding: 20px;
+        color: black;
+        text-align: justify;
+        text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.507);
+        max-width: 500px;
+        margin: auto;
     }
 
     /* CSS */
