@@ -106,7 +106,7 @@ var btn3 = document.querySelector('.btn-3')
     btn1.addEventListener("click", function() {
         
         if (res1.style.display === "block") {
-               document.querySelector('.img-c').src = "chevron_right_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.png"
+               document.querySelector('.img-a').src = "chevron_right_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.png"
             res1.classList.add('animaTXTOut');
             setTimeout(() => {
                 res1.style.display = "none";
@@ -122,7 +122,7 @@ var btn3 = document.querySelector('.btn-3')
            
             res1.classList.remove('animaTXTOut');
             res1.classList.add("animaTXT");
-            document.querySelector('.img-c').src = "close_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.png";
+            document.querySelector('.img-a').src = "close_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.png";
         }
     });
 
