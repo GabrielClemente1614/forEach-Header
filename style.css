@@ -8,7 +8,63 @@
         transform: rotate(360deg);
     }
 }
-    
+
+@keyframes animaTXT {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(0.7);
+        opacity: 0.3;
+    }
+    40% {
+        transform: scale(0.9);
+        opacity: 0.6;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    80% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes animaTXTOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    40% {
+        transform: scale(0.9);
+        opacity: 0.6;
+    }
+    60% {
+        transform: scale(0.7);
+        opacity: 0.3;
+    }
+    80% {
+        transform: scale(0.5);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+}
+
+
+
 
 * {
     margin: 0;
@@ -314,6 +370,27 @@ footer p {
    
 }
 
+.txt123 {
+    max-width: 700px;
+    font-size: 1.3em;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 60px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.img-de-exemplo img {
+    height: 400px;
+    width: 650px;
+    margin: auto;
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.815);
+    border-radius: 0px 15px;
+
+}
+
 
 
 
@@ -331,7 +408,39 @@ footer p {
 }
 
 
+.res {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    overflow: hidden;
+}
 
+.res1, .res2, .res3 {
+    font-size: 1.6em;
+    background: linear-gradient(to right, #333, #666666);
+    padding: 5px 30px;
+    border-radius: 3px;
+    color: white;
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.res1, .res2, .res3 {
+    display: none;
+}
+
+.res1.animaTXT, .res2.animaTXT, .res3.animaTXT {
+    display: block;
+    opacity: 1;
+    animation: animaTXT 0.6s ease-out forwards;
+}
+
+.res1.animaTXTOut, .res2.animaTXTOut, .res3.animaTXTOut {
+    opacity: 0;
+    animation: animaTXTOut 0.6s ease-out forwards;
+}
 
 
 
@@ -344,6 +453,20 @@ footer p {
         color: black;
     
     
+    }
+
+    .img-de-exemplo img {
+        height: 210px;
+        width: 270px;
+        margin: auto;
+        box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.815);
+        border-radius: 0px 15px;
+        
+        
+    }
+
+    .img-de-exemplo {
+        margin-bottom: 50px;
     }
 
     .cont2 {
